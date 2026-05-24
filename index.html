@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator | Salohiddin</title>
     <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="icon" href="./imgs/564429.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -17,18 +25,48 @@
             ><span class="sp7">A</span><span class="sp8">T</span
             ><span class="sp9">O</span><span class="sp10">R</span>
           </h1>
+          <button class="dark">Darkmode</button>
         </div>
       </nav>
       <div class="hero">
         <div class="container">
-          <input class="input1" type="number" placeholder="Son" />
-          <h1 class="ishora"></h1>
-          <input class="input2" type="number" placeholder="Son" />
+          <input type="text" class="input" readonly />
         </div>
       </div>
     </header>
 
-    
+    <main>
+      <section class="ac">
+        <div class="container">
+          <button class="allclear">All clear</button>
+          <button class="back">⬅</button>
+        </div>
+      </section>
+      <section class="amal">
+        <div class="container">
+          <div class="box">
+            <div class="card plus">+</div>
+            <div class="card minus">-</div>
+            <div class="card kop">*</div>
+            <div class="card bol">÷</div>
+          </div>
+          <div class="box2">
+            <div class="num a1">1</div>
+            <div class="num a2">2</div>
+            <div class="num a3">3</div>
+            <div class="num a4">4</div>
+            <div class="num a5">5</div>
+            <div class="num a6">6</div>
+            <div class="num a7">7</div>
+            <div class="num a8">8</div>
+            <div class="num a9">9</div>
+            <div class="num a0">0</div>
+            <div class="num teng">=</div>
+            <div class="num foiz">%</div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
   <script src="./main.js"></script>
 </html>
