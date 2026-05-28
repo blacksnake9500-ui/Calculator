@@ -468,5 +468,338 @@ nav {
 }
 
 @media (max-width:700px) {
-    
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    body {
+        max-width: 500px;
+        border: 2px solid black;
+        margin: 0 auto;
+        margin-top: 1%;
+        padding: 10px;
+        border-radius: 10px;
+
+        &.darkmode {
+            background-color: black;
+            border: 2px solid aqua;
+
+            ::selection {
+                background-color: aqua;
+                color: white;
+            }
+
+            nav {
+                .container {
+                    text-align: center;
+                    padding: 10px 0px;
+
+                    @keyframes title {
+                        0% {
+                            transform: translateY(0px);
+                        }
+
+                        50% {
+                            transform: translateY(-5px);
+                        }
+
+                        100% {
+                            transform: translateY(0px);
+                        }
+                    }
+
+                    h1 {
+                        color: orange;
+
+                        span {
+                            display: inline-block;
+                            padding: 0px 3px;
+                            animation: title 6s linear infinite;
+
+                            &.sp1 {
+                                animation-duration: 1s;
+                            }
+
+                            &.sp2 {
+                                animation-duration: 1.1s;
+                            }
+
+                            &.sp3 {
+                                animation-duration: 1.2s;
+                            }
+
+                            &.sp4 {
+                                animation-duration: 1.3s;
+                            }
+
+                            &.sp5 {
+                                animation-duration: 1.4s;
+                            }
+
+                            &.sp6 {
+                                animation-duration: 1.5s;
+                            }
+
+                            &.sp7 {
+                                animation-duration: 1.6s;
+                            }
+
+                            &.sp8 {
+                                animation-duration: 1.7s;
+                            }
+
+                            &.sp9 {
+                                animation-duration: 1.8s;
+                            }
+
+                            &.sp10 {
+                                animation-duration: 1.9s;
+                            }
+                        }
+                    }
+
+                    .dark {
+                        margin-top: 10px;
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 15px;
+                        cursor: pointer;
+                        transition: all .3s ease;
+                        background-color: white;
+                        color: yellow;
+                        border: 2px solid yellow;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+
+                        &:active {
+                            transform: scale(0.9);
+                        }
+                    }
+                }
+            }
+
+            .hero {
+                .container {
+                    padding: 10px 0px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    justify-content: center;
+
+                    input {
+                        padding: 10px 10px;
+                        margin: 0px 10px;
+                        width: 80%;
+                        border: 3px solid white;
+                        border-radius: 15px;
+                        color: white;
+                        background-color: black;
+                        font-size: 25px;
+                        font-weight: 600;
+                        outline: none;
+                    }
+                }
+            }
+
+            .ac {
+                .container {
+                    padding: 5px 0px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+
+                    button {
+                        padding: 2px 0px;
+                        width: 30%;
+                        font-size: 15px;
+                        border: 1px solid rgba(0, 0, 0, 0.205);
+                        background: linear-gradient(180deg, aqua aquamarine, aqua);
+                        border-radius: 15px;
+                        transition: all .3s ease;
+                        cursor: pointer;
+                        color: black;
+                        font-weight: 400;
+
+                        &:hover {
+                            transform: scale(1.02);
+                            border: 1px solid rgb(255, 238, 0);
+                        }
+
+                        &:active {
+                            background: linear-gradient(180deg, yellow, rgba(235, 232, 64, 0.616), yellow);
+                        }
+                    }
+                }
+            }
+
+            .amal {
+                .container {
+                    padding: 20px 0px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    gap: 50px;
+
+                    .box {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .card {
+                            width: 50px;
+                            border: 1px solid aqua;
+                            padding: 5px;
+                            font-size: 30px;
+                            text-align: center;
+                            cursor: pointer;
+                            transition: all .3s ease;
+
+                            &:hover {
+                                background-color: aqua;
+                                color: white;
+                            }
+
+                            &:active {
+                                transform: scale(0.85);
+                            }
+                        }
+                    }
+
+                    .box2 {
+                        width: 232px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        text-align: center;
+
+                        .num {
+                            width: 50px;
+                            padding: 5px;
+                            font-size: 30px;
+                            font-weight: 600;
+                            border: 3px solid aqua;
+                            margin: 5px;
+                            cursor: pointer;
+                            transition: all .3s ease;
+
+                            &:hover {
+                                background-color: aqua;
+                                color: white;
+                            }
+
+                            &:active {
+                                transform: scale(0.85);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .ac {
+        .container {
+            padding: 5px 0px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            button {
+                padding: 2px 0px;
+                width: 30%;
+                font-size: 15px;
+                border: 1px solid rgba(0, 0, 0, 0.205);
+                background: linear-gradient(180deg, orange, rgba(235, 232, 64, 0.616), orange);
+                border-radius: 15px;
+                transition: all .3s ease;
+                cursor: pointer;
+                color: black;
+                font-weight: 400;
+
+                &:hover {
+                    transform: scale(1.02);
+                    border: 1px solid rgb(255, 238, 0);
+                }
+
+                &:active {
+                    background: linear-gradient(180deg, yellow, rgba(235, 232, 64, 0.616), yellow);
+                }
+            }
+        }
+    }
+
+    .amal {
+        .container {
+            padding: 20px 0px;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            gap: 50px;
+
+            .box {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 10px;
+
+                .card {
+                    width: 50px;
+                    border: 1px solid orange;
+                    padding: 5px;
+                    font-size: 30px;
+                    text-align: center;
+                    cursor: pointer;
+                    transition: all .3s ease;
+
+                    &:hover {
+                        background-color: orange;
+                        color: white;
+                    }
+
+                    &:active {
+                        transform: scale(0.85);
+                    }
+                }
+            }
+
+            .box2 {
+                width: 232px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                text-align: center;
+
+                .num {
+                    width: 50px;
+                    padding: 5px;
+                    font-size: 30px;
+                    font-weight: 600;
+                    border: 3px solid orange;
+                    margin: 5px;
+                    cursor: pointer;
+                    transition: all .3s ease;
+
+                    &:hover {
+                        background-color: orange;
+                        color: white;
+                    }
+
+                    &:active {
+                        transform: scale(0.85);
+                    }
+                }
+            }
+        }
+    }
 }
